@@ -1,4 +1,3 @@
-
 '''
 导入模块，使用模块变量的时候需要遵循模块.变量
 '''
@@ -17,8 +16,15 @@
 # print(b)
 
 
-from newModule.c5 import *
-print(b)
-print(c)
+# from newModule.c5 import *
+# print(b)
+# print(c)
+
+
+from c4 import (a, b,
+c)
+
+print(a)
+
 
 
