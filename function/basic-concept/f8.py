@@ -9,3 +9,11 @@ def func1():
     
 
 func1()
+
+
+def globalDeomo():
+   global hh
+   hh = 10
+
+   globalDeomo()
+   print(hh)
