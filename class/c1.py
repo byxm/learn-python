@@ -18,10 +18,16 @@ class Student():
     def plus_sum(cls):
         cls.sum += 1
         print('clsmethod', cls.sum)
+    
+    @staticmethod   # staticmethod定义静态方法，静态方法同样可以访问类变量
+    def add(x, y):
+        print(Student.sum)
+        # print(self.name)
+        print('This is a static method', x + y)
 
 
 
-# student = Student('simone', 18)
+student = Student('simone', 18)
 # print(student.name)
 # student.print_file()
 # print(student.name)
@@ -38,3 +44,8 @@ student2 = Student('ximeng', 20)
 student2.plus_sum()
 student3 = Student('mengli', 20)
 student3.plus_sum()
+
+Student.add(1,5)
+student.add(1,5)
+
+
